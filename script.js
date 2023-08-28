@@ -95,3 +95,28 @@ resultContainer.addEventListener("click", function (event) {
     resultContainer.innerHTML = "";
   }
 });
+
+//Removing tr when click to close button, removing solution from local storage
+tableBody.addEventListener("click", function (event) {
+  if (event.target && event.target.matches(".fa-regular.fa-circle-xmark")) {
+    const tr = event.target.closest("tr");
+    if (tr) {
+      tr.remove();
+      const expression = tr.querySelector("td:first-child").textContent;
+      removeSolutionFromLocalStorage(expression);
+    }
+  }
+});
+function removeSolutionFromLocalStorage(expression) {
+  const solvedProblemsArray =
+    JSON.parse(localStorage.getItem("solvedProblems")) || [];
+
+  const solutionIndex = solvedProblemsArray.findIndex(
+    (solution) => solution.expression === expression
+  );
+
+  if (solutionIndex !== -1) {
+    solvedProblemsArray.splice(solutionIndex, 1);
+    localStorage.setItem("solvedProblems", JSON.stringify(solvedProblemsArray));
+  }
+}
