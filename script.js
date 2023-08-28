@@ -58,9 +58,11 @@ searchBtn.addEventListener("click", async function (e) {
       const finalResult = await getAnswer(operation, expression);
       console.log(finalResult);
       answerContainer.innerHTML = `
-                <h3>${capitalizedOperation}: ${expression}</h3>
-                <p>${finalResult}</p>
-                <i class="fa-solid fa-trash-can"></i>
+                  <div class="result-section">
+                    <h3>${capitalizedOperation}: ${expression}</h3>
+                    <p>${finalResult}</p>
+                    <i class="fa-solid fa-trash-can" id="delete-btn"></i>
+                  </div>
             `;
     } catch (error) {
       console.log(error);
@@ -85,4 +87,11 @@ solvedSolutionsBtn.addEventListener("click", function () {
                     `;
     tableBody.appendChild(tr);
   });
+});
+
+// Deleting the result div by clicking on the bin icon
+resultContainer.addEventListener("click", function (event) {
+  if (event.target && event.target.matches(".fa-trash-can")) {
+    resultContainer.innerHTML = "";
+  }
 });
