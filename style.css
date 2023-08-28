@@ -125,3 +125,20 @@ h3 {
 .answer-container i:hover {
     color: #111;
 }
+
+/* Table */
+.history-table {
+    max-width: 79%;
+    margin: auto;
+    margin-bottom: 50px;
+}
+
+td i {
+    font-size: 20px;
+    text-align: center;
+    cursor: pointer;
+}
+.close-btn-td {
+    text-align: center;
+    color: red;
+}
