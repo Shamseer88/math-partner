@@ -1,144 +1,144 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
 
 .logo {
-    font-family: 'Poppins', sans-serif;
-    font-weight: 700;
-    font-size: 40px;
-    cursor: pointer;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  cursor: pointer;
 }
 
 .solved-solutions-btn {
-    font-family: 'Poppins', sans-serif;
-    color: white;
-    background-color: black;
-    padding: 5px 25px;
-    border-radius: 12px;
+  font-family: "Poppins", sans-serif;
+  color: white;
+  background-color: black;
+  padding: 5px 25px;
+  border-radius: 12px;
 }
 .solved-solutions-btn:hover {
-    color: black;
-    background-color: white;
-    border: 1px solid black;
+  color: black;
+  background-color: white;
+  border: 1px solid black;
 }
 
 /* Main container style */
 .main-container {
-    max-width: 80%;
-    width: 1200px;
-    margin: 100px auto;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
+  max-width: 80%;
+  width: 1200px;
+  margin: 100px auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
 }
 h3 {
-    font-size: 35px;
-    font-weight: 600;
+  font-size: 35px;
+  font-weight: 600;
 }
 .problem-container input {
-    max-width: 400px;
-    width: 100%;
-    padding: 25px;
-    background-color: lightgrey;
-    border: none;
-    outline: none;
-    border-radius: 12px;
-    font-size: 20px;
+  max-width: 400px;
+  width: 100%;
+  padding: 25px;
+  background-color: lightgrey;
+  border: none;
+  outline: none;
+  border-radius: 12px;
+  font-size: 20px;
 }
 .category-container {
-    position: relative;
+  position: relative;
 }
-.category-container #category{
-    max-width: 400px;
-    width: 100%;
-    padding: 25px;
-    color: white;
-    background-color: black;
-    border: none;
-    outline: none;
-    border-radius: 12px;
-    font-size: 20px;
-    cursor: pointer;
-    appearance: none;
-    -webkit-appearance: none;
-    padding-right: 20px; 
-    cursor: pointer;
-}  
+.category-container #category {
+  max-width: 400px;
+  width: 100%;
+  padding: 25px;
+  color: white;
+  background-color: black;
+  border: none;
+  outline: none;
+  border-radius: 12px;
+  font-size: 20px;
+  cursor: pointer;
+  appearance: none;
+  -webkit-appearance: none;
+  padding-right: 20px;
+  cursor: pointer;
+}
 .category-container::after {
-    content: '\25BC'; /* Unicode down arrow character */
-    position: absolute;
-    font-size: 25px;
-    bottom: 0px;
-    color: white;
-    right: 15px; /* Adjust the position of the arrow */
-    transform: translateY(-50%);
-    pointer-events: none; /* Ensure the arrow doesn't interfere with the click */
-  }
+  content: "\25BC"; /* Unicode down arrow character */
+  position: absolute;
+  font-size: 25px;
+  bottom: 0px;
+  color: white;
+  right: 15px; /* Adjust the position of the arrow */
+  transform: translateY(-50%);
+  pointer-events: none; /* Ensure the arrow doesn't interfere with the click */
+}
 .search-btn-container {
-    display: flex;
-    justify-content: center;
-    align-items: end;
+  display: flex;
+  justify-content: center;
+  align-items: end;
 }
 .search-btn-container i {
-    font-size: 40px;
-    background-color: lightgrey;
-    padding: 20px;
-    border-radius: 50%;
-    cursor: pointer;
+  font-size: 40px;
+  background-color: lightgrey;
+  padding: 20px;
+  border-radius: 50%;
+  cursor: pointer;
 }
-.search-btn-container i:hover{
-    color: lightgray;
-    background-color: black;
+.search-btn-container i:hover {
+  color: lightgray;
+  background-color: black;
 }
-
 
 /* Answer container style */
 .answer-container {
-    max-width: 80%;
-    width: 1200px;
-    margin: 30px auto;
-    height: 250px;
-    background-color: lightgrey;
-    padding: 30px;
-    border-radius: 12px;
-    position: relative;
+  max-width: 80%;
+  width: 1200px;
+  margin: 30px auto;
+  height: 250px;
+  background-color: lightgrey;
+  padding: 30px;
+  border-radius: 12px;
+  position: relative;
 }
 .answer-container h3 {
-    font-size: 30px;
+  font-size: 30px;
 }
 .answer-container p {
-    font-size: 30px;
-    margin-left: 50px;
-    margin-top: 50px;
+  font-size: 30px;
+  margin-left: 50px;
+  margin-top: 50px;
 }
 .answer-container i {
-    font-size: 35px;
-    position: absolute;
-    right: 30;
-    cursor: pointer;
+  font-size: 35px;
+  position: absolute;
+  right: 30;
+  cursor: pointer;
 }
 .answer-container i:hover {
-    color: #111;
+  color: #111;
 }
 
 /* Table */
 .history-table {
-    max-width: 79%;
-    margin: auto;
-    margin-bottom: 50px;
+  max-width: 79%;
+  margin: auto;
+  margin-bottom: 50px;
+  margin-top: 100px;
 }
 
 td i {
-    font-size: 20px;
-    text-align: center;
-    cursor: pointer;
+  font-size: 20px;
+  text-align: center;
+  cursor: pointer;
 }
 .close-btn-td {
-    text-align: center;
-    color: red;
+  text-align: center;
+  color: red;
 }

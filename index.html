@@ -1,68 +1,80 @@
 <html lang="en">
-<head>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+      integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Math Partner</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="navbar-container">
-        <nav class="navbar navbar-light bg-light justify-content-between">
-            <a class="navbar-brand logo" href="/">Math Partner</a>
-            <button class="solved-solutions-btn">Solved Solutions</button>
-        </nav>
+      <nav class="navbar navbar-light bg-light justify-content-between">
+        <a class="navbar-brand logo" href="/">Math Partner</a>
+        <button class="solved-solutions-btn">Solved Solutions</button>
+      </nav>
     </div>
     <div class="main-container">
-        <div class="problem-container">
-            <h3>Problem</h3>
-            <input type="text" name="problem" id="problem" placeholder="Type Here ....">
-        </div>
-        <div class="category-container">
-            <h3>Select Category</h3>
-            <select name="category" id="category">
-                <option value="simplify">Simplify</option>
-                <option value="factor">Factor</option>
-                <option value="derive">Derive</option>
-                <option value="integrate">Integrate</option>
-                <option value="zeroes">Find 0's</option>
-                <option value="tangent">Find Tangent</option>
-                <option value="area">Area Under Curve</option>
-                <option value="cos">Cosine</option>
-                <option value="sin">Sine</option>
-                <option value="tan">Tangent</option>
-                <option value="arccos">Inverse Cosine</option>
-                <option value="arcsin">Inverse Sine</option>
-                <option value="arctan">Inverse Tangent</option>
-                <option value="abs">Absolute Value</option>
-                <option value="log">Logarithm</option>
-            </select>
-        </div>
-        <div class="search-btn-container" id="search-btn">
-            <i class="fa-solid fa-magnifying-glass" id="search-btn-icon"></i>
-        </div>
+      <div class="problem-container">
+        <h3>Problem</h3>
+        <input
+          type="text"
+          name="problem"
+          id="problem"
+          placeholder="Type Here ...."
+        />
+      </div>
+      <div class="category-container">
+        <h3>Select Category</h3>
+        <select name="category" id="category">
+          <option value="simplify">Simplify</option>
+          <option value="factor">Factor</option>
+          <option value="derive">Derive</option>
+          <option value="integrate">Integrate</option>
+          <option value="zeroes">Find 0's</option>
+          <option value="tangent">Find Tangent</option>
+          <option value="area">Area Under Curve</option>
+          <option value="cos">Cosine</option>
+          <option value="sin">Sine</option>
+          <option value="tan">Tangent</option>
+          <option value="arccos">Inverse Cosine</option>
+          <option value="arcsin">Inverse Sine</option>
+          <option value="arctan">Inverse Tangent</option>
+          <option value="abs">Absolute Value</option>
+          <option value="log">Logarithm</option>
+        </select>
+      </div>
+      <div class="search-btn-container" id="search-btn">
+        <i class="fa-solid fa-magnifying-glass" id="search-btn-icon"></i>
+      </div>
     </div>
     <div class="result">
-        <!-- <div class="answer-container">
+      <!-- <div class="answer-container">
             <h3>Integrate: x^2 2x</h3>
             <p>1/2 x^4</p>
             <i class="fa-solid fa-trash-can"></i>
         </div> -->
     </div>
     <div class="history-table">
-        <table id="table" class="table table-bordered">
-            <thead>
-              <tr>
-                <th scope="col">Expression</th>
-                <th scope="col">Operation</th>
-                <th scope="col">Result</th>
-              </tr>
-            </thead>
-            <tbody id="table-body">
-            </tbody>
-          </table>
+      <table id="table" class="table table-bordered">
+        <thead>
+          <tr>
+            <th scope="col">Expression</th>
+            <th scope="col">Operation</th>
+            <th scope="col">Result</th>
+          </tr>
+        </thead>
+        <tbody id="table-body"></tbody>
+      </table>
     </div>
-    <script src="https://kit.fontawesome.com/aed91dc3d2.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/aed91dc3d2.js"
+      crossorigin="anonymous"
+    ></script>
     <script src="script.js" defer></script>
-</body>
+  </body>
 </html>
